@@ -1,72 +1,317 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilo.css">
-    <title>Mi primer pagina con CSS</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andres Mora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
 </head>
-<body>
+  <body>
     <div class="container">
-        <div class="tipoFixed">
-            <nav class="menu">
-                <ul>
-                    <li> <a href="">Inicio</a></li>
-                    <li> <a href="">Galeria</a></li>
-                    <li><a href="">Contactos</a></li>
-                    <li> <a href="">Sobre Nosotros</a></li>
-                </ul>
+      <header>
+        <!-- inicion de navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+      </header>
+      <!-- final del navbar -->
+      <!-- inicio del carrusel -->
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            </nav>
-           </div>
-
-        <header>
-            <nav class="menu">
-                <ul>
-                    <li> <a href="">Inicio</a></li>
-                    <li> <a href="">Galeria</a></li>
-                    <li><a href="">Contactos</a></li>
-                    <li> <a href="">Sobre Nosotros</a></li>
-                </ul>
-
-            </nav>
-
-            <main>
-                <img src="img/imagen.png" alt="">
-                <br>
-                <h2>contenido de la pagina web</h2>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Culpa ipsa voluptatibus et eius odit dolores nisi enim dolore, accusamus aut, 
-                     animi velit nesciunt fugit repudiandae maiores voluptas quibusdam doloremque debitis.
-                </p>
-
-               <div class="tipoStatic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi vel, 
-                blanditiis ipsum amet alias, dignissimos eaque soluta facere magnam asperiores repudiandae,
-                 consectetur quam suscipit nulla aspernatur. Voluptatem, obcaecati ratione?
-               </div> 
-               <br>
-               <div class="TipoRelative">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Itaque ab similique debitis aperiam enim impedit accusantium, officiis, 
-                voluptatem ipsa neque atque perferendis dolorem, amet aliquid recusandae. Perspiciatis illum odio sed.
-
-               </div>
-               <br>
-              
-
-            </main>
-
-
-
-        </header>
-
-        <footer>
-            <p>Este es el pie de pagina</p>
-
-        </footer>
-
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+      
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+  
+        <div class="carousel-item active">
+          <img src="img/programing.jpg" alt="programando" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/ny.jpg" alt="New York" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/la.jpg" alt="Chicago" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/men.jpg" alt="men" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/chicago.jpg" alt="Chicago" class="d-block" style="width:100%">
+        </div>
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-</body>
+  
+     <!-- final del carrusel -->
+      <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: #000000;">Informacion adicional</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body" style="color: #000000;">
+          <p>Andres Mora</p>
+            Ingeniero en sistemas experto en soluciones de software
+            Datos de contacto
+            Dirección: Calle Diputat Isidre Escandell,
+            Valencia, España
+            Correo electrónico:  manuel-muñoz@email.com  
+            Teléfono: 000 000 000  
+  
+            Perfil profesional
+            Ingeniero en sistemas con 4 años y medio de experiencia.
+            En mis empleos anteriores me he destacado por desarrollar soluciones de software teniendo en cuenta el ciclo de vida del mismo.
+            Además, tengo conocimientos de programación y manejo avanzado del lenguaje C++.  
+  
+            Experiencia
+            Ingeniero en sistemas Agencia Tech BC,
+            Valencia, España
+            Abril de 2020 – Febrero de 2022  
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+     <!-- inicio offcanvas -->
+    <div class="offcanvas offcanvas-start" id="demo1">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Heading</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Some text lorem ipsum.</p>
+        <p>Some text lorem ipsum.</p>
+        <p>Some text lorem ipsum.</p>
+        <button class="btn btn-secondary" type="button">A Button</button>
+      </div>
+    </div>
+    <div class="container-fluid mt-3">
+      <h3>Offcanvas Sidebar</h3>
+      <p>Offcanvas is similar to modals, except that it is often used as a sidebar.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
+        Open Offcanvas Sidebar
+      </button>
+    </div>
+
+     <!-- final ofcanvas-->
+      
+  <div class="container">
+    <div class="row">
+      <div class="col sm-3">
+    <!-- inicio del card -->
+          <div class="container mt-3">
+            <h2>Ingeniero</h2>
+            <p>Image at the top (card-img-top):</p>
+            <div class="card" style="width:100%">
+              <img class="card-img-top" src="img/perfil.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Andres Amaris</h4>
+                <p class="card-text">Ingeniero de Sistemas experto en soluciones de Sotfware.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Ver Perfil
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col sm-9">
+          <br>
+          <hr>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus rerum dicta animi. Blanditiis, 
+          cupiditate voluptatibus eligendi, optio quaerat fuga architecto quidem nesciunt a corporis eveniet quibusdam 
+          doloribus iusto itaque dignissimos?
+        
+           <!-- inicio del colapse -->
+
+          <h2>Accordion Example</h2>
+          <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                Collapsible Group Item #2
+              </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                  Collapsible Group Item #4
+                </a>
+              </div>
+              <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+  </div>
+  <!-- boton offcanvas -->
+  <div class="container-fluid mt-3">
+    <h3>Offcanvas Sidebar</h3>
+    <p>Offcanvas is similar to modals, except that it is often used as a sidebar.</p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      Open Offcanvas vertical
+    </button>
+  </div>
+ <!-- final boton -->
+      <br>
+
+        <h1>Trabajando con bootstraps!</h1>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6">primera columna</div>
+            <div class="col-sm-6">segunda columna</div>
+        </div>
+        <div class="row">
+            <div class="col sm 4">primera col</div>
+            <div class="col sm 4">segunda col</div>
+            <div class="col sm 4">tercera col</div>
+        </div>
+        <div class="row">
+            <div class="col sm 8">primera columna de 8</div>
+            <div class="col sm 4">segunda columna de 4</div>
+        </div>
+
+        <br>
+      
+        <button type="button" class="btn btn-primary">Ingresar</button>
+    
+        <button type="button" class="btn btn-danger">salir</button>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="scrollh" style="position: relative;">
+        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+          <h1>Section 1</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        
+        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+          <h1>Section 2</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        
+        <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+          <h1>Section 3</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
