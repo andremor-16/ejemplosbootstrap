@@ -1,0 +1,77 @@
+/* selector universal */
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+    font-size: 15px;
+    /* centrar */
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    /* que no se desborde  */
+    overflow: hidden;
+}
+.menu ul li{
+    list-style: none;
+    float: left;
+}
+.menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* accion al pasar por encima */
+.menu ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+main{
+    width: 100%;
+}
+
+main img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+.tipoStatic{
+    border: 2px solid red;
+    position: static;
+    background-color: #DAFBFA;
+}
+
+.TipoRelative{
+    border: 2px solid blue;
+    position: relative;
+    left: 10px;
+    padding: 10px;
+    background-image: linear-gradient(#3F51B5, #55E71C);
+}
+.tipoFixed{
+    border: 2px groove lawngreen;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(red, blue);
+    width: 100%;
+}
+
